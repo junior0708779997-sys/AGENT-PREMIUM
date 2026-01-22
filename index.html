@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="robots" content="index, follow">
+  <meta name="author" content="AGENT PREMIUM">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGENT PREMIUM – Netflix, Spotify, Canva & Disney+ à prix réduit</title>
+  <meta name="description" content="Achetez des comptes Netflix, Spotify, Canva et Disney+ à prix réduit. Comptes testés, livraison rapide et support WhatsApp 24h/24.">
+
+  <!-- SEO -->
+  <meta name="description" content="Netflix, Spotify, Canva, Disney+ à prix réduit. Livraison rapide et support WhatsApp 24h/24.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="loader">
+  <div class="spinner"></div>
+</div>
+
+
+<!-- ================= HEADER ================= -->
+<header class="navbar">
+    <div class="logo">AGENT PREMIUM</div>
+  
+
+  <div class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</div>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="#accueil">Accueil</a>
+    <a href="#products">Comptes</a>
+    <a href="#contact">Contact</a>
+    <a href="#products" class="btn-primary">Acheter</a>
+  </nav>
+</header>
+
+<main id="accueil">
+
+<!-- ================= HERO ================= -->
+<section class="hero hero-bg">
+  <div class="hero-text">
+    <span class="hero-badge">🔥 Promo</span>
+
+    <h1>Accédez à Netflix, Spotify, Canva, Disney+ et plus encore</h1>
+
+    <p class="seo-text">Vente de comptes premium Netflix, Spotify, Canva et Disney+ en Afrique avec livraison rapide.</p>
+
+
+    <div class="hero-line"></div>
+
+    <p>Comptes testés, livraison rapide et assistance WhatsApp 24h/24.</p>
+
+    <!-- Compteur promo (déjà prévu dans ton JS) -->
+    <p class="promo-timer">
+      ⏳ Fin de la promo dans : <span id="countdown">--:--:--</span>
+    </p>
+
+    <button class="btn-secondary"
+      onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+      Voir les offres
+    </button>
+  </div>
+</section>
+
+<!-- ================= AVANTAGES ================= -->
+<section class="features fade-up">
+  <div class="feature">
+    <h3>🔐 Sécurisé</h3>
+    <p>Comptes testés et garantis</p>
+  </div>
+
+  <div class="feature">
+    <h3>⚡ Rapide</h3>
+    <p>Livraison immédiate</p>
+  </div>
+
+  <div class="feature">
+    <h3>📞 Support</h3>
+    <p>Disponible 24h/24</p>
+  </div>
+</section>
+
+<!-- ================= PRODUITS ================= -->
+<section class="products" id="products">
+  <h2>Nos comptes premium</h2>
+
+  <div class="product-list">
+
+    <div class="product-card netflix fade-up">
+      <h3>Netflix Premium</h3>
+      <p>Ultra HD • 4 écrans</p>
+      <span class="price">3 000 FCFA / mois</span>
+      <span class="product-badge best">Mike Seller</span>
+
+      <button onclick="orderProduct('Netflix Premium - 3000 FCFA')">
+        Acheter
+      </button>
+
+      <button class="wave-btn"
+        onclick="payWithWave('Netflix Premium', 3000)">
+        Payer avec Wave
+      </button>
+    </div>
+    <div class="product-card capcut pro fade-up">
+      <h3>Capcut Pro</h3>
+      <p>Editer comme un pro 😎</p>
+      <span class="price">2000 FCFA / mois</span>
+      <span class="product-badge best">Mike Seller</span>
+      <button onclick="orderProduct('Capcut Pro - 2000 FCFA')">
+        Acheter
+      </button>
+      <button class="wave-btn"
+        onclick="payWithWave('Capcut Pro' , 2000)">
+        Payer avec Wave
+      
+      </button>
+    </div>
+
+
+    <div class="product-card spotify fade-up">
+      <h3>Spotify Premium</h3>
+      <p>Sans pub • Offline</p>
+      <span class="price">2 000 FCFA / mois</span>
+      <span class="product-badge best">Mike Seller</span>
+
+      <button onclick="orderProduct('Spotify Premium - 2000 FCFA')">
+        Acheter
+      </button>
+
+      <button class="wave-btn"
+        onclick="payWithWave('Spotify Premium', 2000)">
+        Payer avec Wave
+      </button>
+    </div>
+
+    <div class="product-card canva fade-up">
+      <h3>Canva Pro</h3>
+      <p>Design illimité</p>
+      <span class="price">2 500 FCFA / mois</span>
+      <span class="product-badge best">Mike Seller</span>
+
+      <button onclick="orderProduct('Canva Pro - 2500 FCFA')">
+        Acheter
+      </button>
+
+      <button class="wave-btn"
+        onclick="payWithWave('Canva Pro', 2500)">
+        Payer avec Wave
+      </button>
+    </div>
+
+    <div class="product-card disney fade-up">
+      <h3>Disney+</h3>
+      <p>Films & séries</p>
+      <span class="price">2 500 FCFA / mois</span>
+      <span class="product-badge best">Mike Seller</span>
+
+      <button onclick="orderProduct('Disney+ - 2500 FCFA')">
+        Acheter
+      </button>
+
+      <button class="wave-btn"
+        onclick="payWithWave('Disney+', 2500)">
+        Payer avec Wave
+      </button>
+    </div>
+    <div class="product-card Figma fade-up">
+      <h3>Figma</h3>
+      <p>Pour vos filtres et design </p>
+      <span class="price">1500 FCFA / mois</span> 
+      <span class="product-badge best">Mike Seller</span>
+
+
+      <button onclick="orderProduct('Figma - 1500 FCFA')">
+        Acheter
+      </button>
+
+
+      <button onclick="payWithWave('Figma', 1500)">
+        Payer avec Wave
+      </button>
+      
+    </div>
+
+  </div>
+</section>
+<!--=================Avis Client=======================-->
+<section class="reviews fade-up">
+  <h2>Avis de nos clients</h2>
+
+  <div class="review-list">
+    <div class="review-card">
+      <p>Service rapide, compte Netflix reçu en moins de 5 minutes 🔥</p>
+      <span class="author">— Kevin A.</span>
+    </div>
+
+    <div class="review-card">
+      <p>Spotify Premium fonctionne parfaitement, je recommande 👍</p>
+      <span class="author">— Sarah M.</span>
+    </div>
+
+    <div class="review-card">
+      <p>Support très réactif sur WhatsApp, merci AGENT PREMIUM.</p>
+      <span class="author">— Ibrahim K.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>📱 WhatsApp : <strong>+225 07 08 77 99 97</strong></p>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final-cta">
+  <h2>Besoin d’un compte premium ?</h2>
+  <p>Contactez-nous maintenant et recevez votre compte rapidement.</p>
+
+  <a href="https://wa.me/2250708779997"
+     class="cta-btn"
+     target="_blank"
+     rel="noopener">
+    💬 Commander sur WhatsApp
+  </a>
+</section>
+
+<section class="payment-info">
+  <h2>Comment payer ?</h2>
+
+  <ol>
+    <li>Choisissez votre compte premium</li>
+    <li>Cliquez sur Acheter ou Payer avec Wave</li>
+    <li>Vous êtes redirigé vers WhatsApp</li>
+    <li>Effectuez le paiement mobile</li>
+    <li>Envoyez la preuve et recevez votre compte</li>
+  </ol>
+
+  <p>
+    💳 Moyens acceptés : Wave, Orange Money, MTN Mobile Money
+  </p>
+</section>
+<section class="faq">
+  <h2>Questions fréquentes</h2>
+
+  <div class="faq-item">
+    <h3>Les comptes sont-ils garantis ?</h3>
+    <p>Oui, tous nos comptes sont testés avant livraison.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Quand vais-je recevoir mon compte ?</h3>
+    <p>La livraison se fait immédiatement après paiement.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Quels moyens de paiement acceptez-vous ?</h3>
+    <p>Wave, Orange Money et MTN Mobile Money.</p>
+  </div>
+</section>
+<section class="conditions">
+  <h2>Conditions d’utilisation</h2>
+
+  <ul>
+    <li>Les comptes sont strictement personnels</li>
+    <li>Aucun changement de mot de passe autorisé</li>
+     <li>Assistance disponible en cas de problème</li>
+    <li>Pas de remboursement après livraison</li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="footer">
+ <p>
+  Vente de comptes premium en Afrique – Paiement mobile & WhatsApp
+</p> 
+</footer>
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+<a href="https://wa.me/2250708779997"
+   class="whatsapp-btn"
+   target="_blank"
+   aria-label="WhatsApp">
+  💬
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
